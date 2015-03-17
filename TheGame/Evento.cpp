@@ -27,7 +27,9 @@ void Evento::Processa(Event &evento,  RenderWindow &janela)
 
 	                case Event::KeyPressed:
 	                	if(evento.key.code == Keyboard::Escape)
-	                		janela.close();                	
+	                		janela.close();      
+						if (evento.key.code == Keyboard::BackSpace)
+							system("cls");
 	                	break;
 	                case Event::MouseEntered:
 	                	cout << "Mouse dentro das janela" << endl;
@@ -35,7 +37,7 @@ void Evento::Processa(Event &evento,  RenderWindow &janela)
 	                case Event::MouseLeft:
 	                	cout << "Mouse saiu da janela" << endl;
 	                	break;
-
+				 
 
 	            }
 

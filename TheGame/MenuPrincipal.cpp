@@ -8,8 +8,9 @@ MenuPrincipal::MenuPrincipal(void)
 	else
 		//Prepara sprites com a imagem para desenho
 		bg_spt.setTexture(bg);
-		
-
+	
+	posicao.x = 400, posicao.y = 300;
+	StartBt.addBotao(posicao, "Start");
 	
 }
 
@@ -25,6 +26,9 @@ Tela * MenuPrincipal::desenha(RenderWindow *janela)
 		//cout << tamanhoImg.x << "\t" << tamanhoImg.y << endl;
 	
 	janela->draw(bg_spt);
+	janela->draw(StartBt.desenhaBotao());
+	janela->draw(StartBt.desenhaTitulo());
+	StartBt.MouseOver(janela);
 	return NULL;
 }
 

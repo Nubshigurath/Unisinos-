@@ -1,5 +1,6 @@
 
 #include "Tela.h"
+#include "Gui.h"
 
 using namespace std;
 using namespace sf;
@@ -10,7 +11,8 @@ private:
 	Texture bg;
 	Sprite bg_spt;
 	Vector2u tamanhoImg;
-	
+	Gui StartBt;
+	Vector2f posicao;
 
 
 
