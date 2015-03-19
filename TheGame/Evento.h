@@ -12,12 +12,15 @@ using namespace std;
 class Evento
 {
 private:
-	 Event evento;
+	 //Event evento;
+	Event *jogo;
 
 public:
 	 Evento(void);
 	 ~Evento(void);
-	 void Processa(Event &evento, RenderWindow &janela);
+	 //void Processa(Event &evento, RenderWindow &janela);
+	 void Checar(RenderWindow &janela);
+	 bool soltouBotaoEsquerdo(RenderWindow &janela);
 };
 
 

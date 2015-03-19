@@ -1,6 +1,8 @@
 
 #include "Tela.h"
 #include "Gui.h"
+#include "Evento.h"
+
 
 using namespace std;
 using namespace sf;
@@ -11,8 +13,9 @@ private:
 	Texture bg;
 	Sprite bg_spt;
 	Vector2u tamanhoImg;
-	Gui StartBt;
+	Gui newGameBt, loadGameBt;
 	Vector2f posicao;
+	Evento tarefa;
 
 
 
@@ -21,7 +24,8 @@ public:
 	MenuPrincipal(void);
 	~MenuPrincipal(void);
 
-	Tela* desenha(RenderWindow *janela);
+	Tela* desenha(RenderWindow *janela); 
+	void Update(Gui botoes, RenderWindow &janela);
 
 };
 

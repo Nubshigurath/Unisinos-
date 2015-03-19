@@ -14,7 +14,6 @@ GerenteTelas::~GerenteTelas(void)
 void GerenteTelas::adicionarTela(Tela *t)
 {
 	pilhaTelas->push(t);
-
 }
 
 

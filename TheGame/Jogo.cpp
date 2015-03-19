@@ -8,19 +8,13 @@ using namespace std;
 
 int main()
 {
-	
-	
-	Event jogo;
-	Evento tarefa;
+	Evento tarefas;
 	GerenteTelas *g = new GerenteTelas;
 	RenderWindow *janela = new RenderWindow;
 	MenuPrincipal *menu = new MenuPrincipal;
 	Image icon;
 	if (!icon.loadFromFile("Resource\\img\\icone.png"))
 		cout << "Não conseguiu carregar icone" << endl;
-
- 
-
 
 	janela->create(VideoMode(800, 600, 32 ), "The Game" ); // Cria a janela
 	janela->setFramerateLimit(30);
@@ -30,20 +24,10 @@ int main()
 
 	while (janela->isOpen()) // roda o jogo enquanto a janela estiver aberta
 	{
-
-		while (janela->pollEvent(jogo))     // poolEvent joga um evento na pilha para ser processado
-		{
-			tarefa.Processa(jogo, *janela);
-			
-		}
-
-		
-		//cout <<  "Mouse X: " << posicaoMouse.x << " Mouse Y: " << posicaoMouse.y <<  endl;      
+		tarefas.Checar(*janela); // Por performance o ideal seria verificar apenas o Quit aqui no "main"
 		janela->clear();
 		g->desenha(janela);
 		janela->display();
-
-
 
 	}
 

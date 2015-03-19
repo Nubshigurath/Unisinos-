@@ -1,6 +1,7 @@
 #pragma once
 #include <stack>
 #include "Tela.h"
+#include "Evento.h"
 
 using namespace std;
 using namespace sf;
