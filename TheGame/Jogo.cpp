@@ -19,7 +19,7 @@ int main()
 	janela->create(VideoMode(800, 600, 32 ), "The Game" ); // Cria a janela
 	janela->setFramerateLimit(30);
 	janela->setKeyRepeatEnabled(false); // Faz com que aceite 01 input por vez
-	janela->setIcon(256, 256, icon.getPixelsPtr());
+	//janela->setIcon(256, 256, icon.getPixelsPtr());
 	g->adicionarTela(menu);
 
 	while (janela->isOpen()) // roda o jogo enquanto a janela estiver aberta

@@ -1,17 +1,20 @@
-﻿Build started 16/03/2015 23:42:31.
-     1>Project "C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\TheGame\TheGame.vcxproj" on node 2 (Build target(s)).
+﻿Build started 19/03/2015 16:36:55.
+     1>Project "C:\Users\Felipe Lima\Documents\Yuri_Gui\Unisinos-\TheGame\TheGame.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt MenuPrincipal.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Evento.cpp GerenteTelas.cpp Gui.cpp Jogo.cpp MenuPrincipal.cpp
          MenuPrincipal.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\x64\Debug\TheGame.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\SFML\SFML-2.2\lib" "sfml-system-d.lib" "sfml-network-d.lib" "sfml-audio-d.lib" "sfml-window-d.lib" "sfml-graphics-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\x64\Debug\TheGame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\x64\Debug\TheGame.lib" /MACHINE:X64 x64\Debug\Evento.obj
-         x64\Debug\GerenteTelas.obj
-         x64\Debug\Gui.obj
-         x64\Debug\Jogo.obj
-         x64\Debug\MenuPrincipal.obj
-         TheGame.vcxproj -> C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\x64\Debug\TheGame.exe
-     1>Done Building Project "C:\Users\Yuri\Documents\Projetos\Unisinos\C++\Jogo\TheGame\TheGame\TheGame.vcxproj" (Build target(s)).
+     1>c:\users\felipe lima\documents\yuri_gui\unisinos-\thegame\Tela.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+         Jogo.cpp
+     1>c:\users\felipe lima\documents\yuri_gui\unisinos-\thegame\Evento.h(4): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+         Gui.cpp
+     1>c:\users\felipe lima\documents\yuri_gui\unisinos-\thegame\Gui.h(2): fatal error C1083: Cannot open include file: 'SFML\Graphics.hpp': No such file or directory
+         GerenteTelas.cpp
+     1>c:\users\felipe lima\documents\yuri_gui\unisinos-\thegame\Tela.h(2): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+         Evento.cpp
+     1>c:\users\felipe lima\documents\yuri_gui\unisinos-\thegame\Evento.h(4): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Felipe Lima\Documents\Yuri_Gui\Unisinos-\TheGame\TheGame.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.90
+Time Elapsed 00:00:00.95
